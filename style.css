@@ -48,6 +48,7 @@ body{
 .para{
     margin-top: 10px;
     color: var(--Grayish_Blue);
+    Font-size: 15px;
 }
 
 
@@ -57,27 +58,60 @@ body{
     justify-content: center;
 }
 .box{
-    width: 300px;
-    height: 191px;
-    border: 1px solid black;
+    width: 280px;
+    height: 160px;
+    background-color: var(--Very_Light_Gray);
     margin-right: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
 }
-.box-container{
-   
-}
+
 .box1{
     align-self: center;
+    border-top: 2px solid var(--Cyan);
 }
 .box2{
     margin-bottom: 15px;
+    border-top: 2px solid var(--Red);
 }
 .box3{
-
+    border-top: 2px solid var(--Orange);
 }
 .box4{
     align-self: center;
+    border-top: 2px solid var(--Blue);
 }
-
+.header-text p{
+    font-size: 10px;
+    margin-top: 10px;
+    color: var(--Grayish_Blue);
+}
 .img{
+    margin-top: 35px;
+    text-align: right;
 
 }
+
+.img img{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        height: 100vh;
+        padding: 10px;
+        overflow: scroll;
+    }
+    .cards{
+        flex-wrap: wrap;
+       
+    }
+    .header{
+        margin-bottom: 30px;
+    }
+    .box{
+        margin: 10px auto;
+    }
+}
+
